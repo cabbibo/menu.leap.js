@@ -1,0 +1,69 @@
+
+.fullHolder{
+
+  position  : absolute;
+  right     : 0px;
+  top       : 0px;
+  height    : 100%;
+  outline   : 2px solid blue;
+
+}
+
+.menuHolder{
+
+  float     : right; 
+  //right     : 0px;
+  top       : 0px;
+  height    : 100%;
+  outline   : 1px solid yellow;
+
+}
+
+.menuOption{
+
+  float     : right;
+  right     : 0px;
+  outline   : 1px solid red;
+
+}
+
+.menuOption p{
+
+  /*width     : 100%;
+  height    : 100%;*/
+  outline   : 1px solid orange;
+  margin-left:auto;
+  margin:auto;
+  margin-right:auto;
+  text-align  :center;
+
+}
+
+
+/*
+ *    Adding CSS Class stuff for leap
+ */
+
+.leapCursor{
+
+  position:absolute;
+  z-index:999;
+  display:block;
+  width:10px;
+  height:10px;
+  background:red;
+  outline:3px solid black;
+
+}
+
+.hovered{
+
+  background: red;
+
+}
+
+.selected{
+
+  background: green;
+
+}

@@ -1,0 +1,70 @@
+<!--
+
+
+
+
+    This is the first attempt at creating a prototypable menu
+
+
+    Its going to be ugly, so if there is anywayt you can help make it better
+    please do:
+
+    http://github.com/cabbibo/menu.leap.js
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+<html>
+
+  <head>
+      <link rel="stylesheet" type="text/css" href="menu.css">
+  </head>
+
+  <body>
+
+
+    <!-- LIBARIES -->
+    <script src = "//js.leapmotion.com/0.2.1/leap.min.js">  </script>
+    <script src = "/allSiteLib/underscore.js">              </script>
+    <script src = "/allSiteLib/js/jss.js">                  </script>
+
+    <!-- LEAP -->
+    <script src = "loop.js" >                               </script>
+    
+    <!-- CREATE DEM MENUS -->
+    <script src = "menuTree.js" >                           </script>
+    <script src = "menuController.js" >                     </script>
+    <script src = "menu.js" >                               </script>
+
+    <script>
+
+      var menu;
+      var menuController;
+      var MC;
+
+
+      init();
+
+      function init(){
+
+        menuController = new MenuController();
+        menuController.createMenu( menuTree );
+
+        MC = menuController;
+
+        initLeap();
+
+      }
+
+    </script>
+  </body>
+</html>
